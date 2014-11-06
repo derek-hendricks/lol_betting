@@ -1,0 +1,248 @@
+.home-box {
+  color: white;
+  padding: 0;
+  text-align: left;
+  background-color: rgba(18, 18, 19, 0.91);
+  margin-top: 30px;
+  box-shadow: 2px 2px 11px 4px #302020;
+  min-height: 500px;
+.home-header {
+    border-bottom: 1px solid;
+
+    * {
+        display: inline-block;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .right {
+        float: right;
+        margin: 32px 20px 0 5px;
+    }
+}
+
+.home-body {
+
+    .home-body-left {
+        text-align: center;
+        padding: 15px;
+
+        .button {
+            margin: 10px 0;
+            
+            button {
+                width: 200px;
+            }    
+        }
+    }
+
+    .home-body-right {
+        padding: 15px;
+    }   
+}
+}
+
+.search-loading {
+  position: fixed;
+  background-color: rgba(26, 26, 22, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  left: 0px;
+  top: 0;
+  padding: 200px;
+  
+  .loading-box {
+    width: 425px;
+    margin: 0 auto;
+    background: rgba(36, 36, 30, 1);
+    padding: 15px 0;
+
+    .loading-ball {
+      position: relative;
+      top: 17px;  
+    }
+
+    h3 {
+        color: #E2E1E1;
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+}
+
+.ball {
+  background-color: rgba(0,0,0,0);
+  border: 5px solid rgba(0,183,229,0.9);
+  opacity: .9;
+  border-top: 5px solid rgba(0,0,0,0);
+  border-left: 5px solid rgba(0,0,0,0);
+  border-radius: 50px;
+  box-shadow: 0 0 35px #2187e7;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  -moz-animation: spin .5s infinite linear;
+  -webkit-animation: spin .5s infinite linear;
+}
+
+.ball1 {
+  background-color: rgba(0,0,0,0);
+  border: 5px solid rgba(0,183,229,0.9);
+  opacity: .9;
+  border-top: 5px solid rgba(0,0,0,0);
+  border-left: 5px solid rgba(0,0,0,0);
+  border-radius: 50px;
+  box-shadow: 0 0 15px #2187e7;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+  -moz-animation: spinoff .5s infinite linear;
+  -webkit-animation: spinoff .5s infinite linear;
+}
+
+  @-moz-keyframes spin {
+  0% {
+      -moz-transform: rotate(0deg);
+  }
+
+  100% {
+      -moz-transform: rotate(360deg);
+  };
+  }
+
+  @-moz-keyframes spinoff {
+  0% {
+      -moz-transform: rotate(0deg);
+  }
+
+  100% {
+      -moz-transform: rotate(-360deg);
+  };
+  }
+
+  @-webkit-keyframes spin {
+  0% {
+      -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(360deg);
+  };
+  }
+
+  @-webkit-keyframes spinoff {
+  0% {
+      -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(-360deg);
+  };
+}
+.summoner-name {
+  font-family: 'Averia Serif Libre', san-serif;
+  max-width: 300px;
+  margin: 7px 0 0 25px;
+  font-size: 40px;
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : landscape) { 
+    font-size: 30px;
+  }
+}
+
+.champIcon{
+  width: 30px;
+}
+
+.champIcon:hover{
+  width: 35px;
+  position: relative;
+}
+.match{
+  margin-bottom: 5px;
+  border: thick;
+  border-radius: 5px;
+  /*background-color: rgba(80, 80, 80, 0.56);*/
+  background: linear-gradient(rgb(144, 139, 131), #6F6B68);
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  &:hover {
+    height: 40px;
+    transition: all;
+  }
+}
+.winner{
+  margin-left: 30px;
+  color: white;
+}
+
+.team1{
+  /*background: purple;*/
+}
+.team2{
+  /*background: blue;*/
+}
+.recent-match-title{
+  text-align: center;
+
+}
+
+
+.orange-button {
+  text-transform: uppercase;
+  padding: 11px 20px 8px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  color: rgb(247, 247, 247);
+  border-color: #F0F0F0 #F5F1ED #FAF9F8 #FAF8F5;
+  background: linear-gradient(rgb(39, 39, 39), #000000);
+  border-radius: 5px;
+  &:hover {
+    color: #FCFCFC;
+    border-color: #F9F5ED #F2E8DF #F2E7DE #F7F3EC;
+    background: linear-gradient(#444240, #888784);
+  }
+
+  &:active {
+    color: #FCFCFC;
+    border-color: #F9F5ED #F2E8DF #F2E7DE #F7F3EC;
+    background: linear-gradient(#444240, #888784);
+  }
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : landscape) { 
+    font-size: 14px;
+  }
+}
+
+.wallet{
+  display: inline;
+
+  .conversion {
+    margin: 0 0 0 26px;
+  }
+}
+
+.left{
+  width: 60%;
+  @media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) 
+  and (orientation : landscape) { 
+    width: 368px;
+  }
+
+  .summoner-icon {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,35 @@
+<script>
+// $('.sidebar').addClass('nav-show'); 
+// $("#nav-toggle").addClass("active");
+$('.slider-button').on("click", function(){
+    $('.sidebar').toggleClass('nav-show');
+    $("#nav-toggle").toggleClass("active"); 
+});
+
+// $("#nav-toggle").on( "click", function() {
+//     $(this).toggleClass("active");
+//   });
+
+</script>
+
+<div class="col-sm-3 col-md-2 sidebar nav-styles" ng-controller="NavbarCtrl">
+  <div class="col-sm-12 col-md-12">
+    <div class="slider-button" style="background: purple;">
+      <a id="nav-toggle" href="#"><span></span></a>
+    </div>
+    <ul class="nav nav-sidebar" ng-controller="LoginCtrl">
+      <div id="spacer"></div>
+      <li ng-hide="isLoggedIn()" class="active"><a href="/login">Login<i class="fa fa-sign-in icon"></i></a></li>
+      <li ng-show="isLoggedIn()" class="active"><a href="" ng-click="logout()">Logout<i class="fa fa-sign-out icon"></i></a></li>
+      <li ng-show="isLoggedIn()"><a href="/settings">Settings<i class="fa fa-cog icon"></i></a></li>
+      <li ng-show="isLoggedIn()"><a href="/home">Profile<i class="fa fa-user icon"></i></a></li>
+      <li><a href="/summoner_search">Users<i class="fa fa-users icon"></i></a></li>
+      <li ng-show="isLoggedIn()"><a href="/btc_transaction">Funds<i class="fa fa-btc icon"></i></a></li>
+      
+    </ul>
+  </div>
+  <!-- <div class="col-sm-1 col-md-1"> -->
+    
+  <!-- </div> -->
+</div>
+<meta name="viewport" content="width=max-device-width, initial-scale=1, user-scalable=yes, minimal-ui">

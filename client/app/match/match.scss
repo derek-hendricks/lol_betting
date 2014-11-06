@@ -1,0 +1,270 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+  .match-icon img{
+    width: 70%;
+  }
+}
+
+.match-box {
+  color: white;
+  padding: 0;
+  text-align: left;
+  background-color: rgba(18, 18, 19, 0.91);
+  margin-top: 30px;
+  box-shadow: 2px 2px 11px 4px #302020;
+  padding: 0px 0 20px;
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+      margin-top: 40px;
+      margin-right: -10px;
+      padding-right: -10px;
+      margin-bottom: 40px;
+      height: 570px;
+      left: 20px;
+    }
+  
+  .status {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 30px;
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    &.start {
+      background: rgba(2, 187, 242, 0.54);
+    }
+
+    &.confirmed {
+      background: rgba(14, 169, 16, 0.54);
+    }
+
+    &.complete {
+      background: rgba(14, 169, 16, 0.54);
+    }
+
+    &.error {
+      background: rgba(242, 33, 33, 0.54);
+    }
+  }
+
+  .pot {
+    /*border: 1px solid black;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 109px;*/
+    height: 207px;
+    padding: 22px 27px;
+    text-align: center;
+
+    .confirmed {
+      width: 91px;
+      margin: 0 auto;
+
+      h3 {
+        margin-bottom: 2px;
+        border-bottom: 2px solid rgba(14, 169, 16, 0.54);
+        margin-top: 33px;
+        font-size: 28px;
+      }
+      p {
+        font-weight: 600;
+        color: rgba(14, 169, 16, 0.54);
+      }
+    }
+  }
+
+  .player {
+    padding-right: 0;
+
+    .player-inner {
+      .match-icon {
+        float: left;
+        padding: 0;
+
+      }
+
+      .bet-input {
+        padding-top: 20px;
+
+        input {
+          width: 100%;
+          height: 45px;
+          padding: 7px 20px;
+          font-size: 20px;
+          color: black;
+        }
+      }
+
+      .bet-details {
+        text-align: right;
+        float: right
+      }
+    }
+  }
+
+  .opponent {
+    text-align: right;
+    padding-left: 0;
+    
+    .opponent-inner {
+      .match-icon {
+        float: right;
+        padding: 0;
+      }
+      .bet-details {
+        text-align: left;
+      }
+    }
+  }
+
+  .match-box-bottom {
+    table {
+      img {
+        width: 30px;
+      }
+    }
+  }
+  
+  .btn-large {
+    padding: 8px 11px 8px 11px;
+    margin: 0;
+    width: 100%;
+
+    &.active {
+      color: #222;
+      border-color: #e1b03d #7f3517 #772d16 #c17f30;
+      background: #D08901;
+    }
+
+    &.complete {
+      width: 150px;
+    }
+  }
+}
+
+/* ------------------------------------------- */
+/* Slide Down
+/* ------------------------------------------- */
+/* line 270, ../sass/ng-animation.scss */
+.slide-down {
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+}
+/* line 273, ../sass/ng-animation.scss */
+.slide-down.ng-enter {
+  transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 0;
+}
+/* line 279, ../sass/ng-animation.scss */
+.slide-down.ng-enter-active {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+/* line 284, ../sass/ng-animation.scss */
+.slide-down.ng-leave {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+/* line 290, ../sass/ng-animation.scss */
+.slide-down.ng-leave-active {
+  transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  opacity: 0;
+}
+/* line 296, ../sass/ng-animation.scss */
+.slide-down.ng-hide-add {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  opacity: 1;
+}
+/* line 301, ../sass/ng-animation.scss */
+.slide-down.ng-hide-add.ng-hide-add-active {
+  transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  opacity: 0;
+}
+/* line 307, ../sass/ng-animation.scss */
+.slide-down.ng-hide-remove {
+  transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -webkit-transform: translateY(-60px);
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  display: block !important;
+  opacity: 0;
+}
+/* line 313, ../sass/ng-animation.scss */
+.slide-down.ng-hide-remove.ng-hide-remove-active {
+  transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  opacity: 1;
+}
+
+/* ------------------------------------------- */
+/* Flip In 
+/* ------------------------------------------- */
+/* line 763, ../sass/ng-animation.scss */
+.flip-in {
+  -webkit-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0 cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -ms-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* easeOutQuad */
+}
+/* line 800, ../sass/ng-animation.scss */
+.flip-in.ng-hide-remove {
+  transform: perspective(300px) rotateX(90deg);
+  -ms-transform: perspective(300px) rotateX(90deg);
+  -webkit-transform: perspective(300px) rotateX(90deg);
+  transition-duration: 550ms;
+  -webkit-transition-duration: 550ms;
+  display: block !important;
+  opacity: 0;
+}
+/* line 806, ../sass/ng-animation.scss */
+.flip-in.ng-hide-remove.ng-hide-remove-active {
+  transform: perspective(300px) rotateX(0deg);
+  -ms-transform: perspective(300px) rotateX(0deg);
+  -webkit-transform: perspective(300px) rotateX(0deg);
+  opacity: 1;
+}
+
+.complete{
+  float: right;
+}
